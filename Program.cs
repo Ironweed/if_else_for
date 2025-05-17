@@ -7,6 +7,45 @@ namespace if_else_for
         static void Main(string[] args)
         {
 
+
+            Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
+
+		var color = Console.ReadLine();
+
+		switch(color)
+		{
+			case "red":
+				Console.BackgroundColor = ConsoleColor.Red;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Your color is red!");
+			break;
+
+			case "green":
+				Console.BackgroundColor = ConsoleColor.Green;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Your color is green!");
+			break;
+
+    	    case "cyan":
+				Console.BackgroundColor = ConsoleColor.Cyan;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Your color is Cyan!");
+			break;
+
+
+			default:
+				Console.BackgroundColor = ConsoleColor.Yellow;
+				Console.ForegroundColor = ConsoleColor.Red;
+
+				Console.WriteLine("Your BackgroundColor color is Yellow and ForegroundColor color is Red!");
+				break;
+		}
+
+/*
+            //////////////////////////////////////////////////////////////////////////
             Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 
             var color = Console.ReadLine();
@@ -34,7 +73,7 @@ namespace if_else_for
                 Console.WriteLine("Your color is cyan!");
             }
 
-/*
+
             //////////////////////////////////////////////////////////////////////////
             var a = 6;
             var b = 7;
